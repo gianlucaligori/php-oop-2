@@ -1,6 +1,5 @@
 <?php
 
-include __DIR__ . "./catalog.php";
 include __DIR__ . "./products.php";
 
 
