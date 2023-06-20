@@ -2,9 +2,9 @@
 
 class snack
 {
-    public $name;
-    public $price;
-    public $category;
+    public string $name;
+    public int $price;
+    public string $category;
 
     public function __construct($name, $price, $category)
     {
@@ -15,5 +15,5 @@ class snack
 }
 
 
-$snackDog = new Product('Barrette', ' 19.99', 'Per cani');
-$snackCat = new Product('Biscotti', '15.99', 'Per Gatto');
+$snackDog = new snack('Barrette', ' 19.99', 'Per cani');
+$snackCat = new snack('Biscotti', '15.99', 'Per Gatto');

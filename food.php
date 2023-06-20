@@ -2,18 +2,22 @@
 
 class food
 {
-    public $name;
-    public $price;
-    public $category;
+    public string $name;
+    public int $price;
+    public string $category;
+    public int $weight;
 
-    public function __construct($name, $price, $category)
+
+
+    public function __construct($name, $price, $category, $weight)
     {
         $this->name = $name;
         $this->price = $price;
         $this->category = $category;
+        $this->weight = $weight;
     }
 }
 
 
-$foodDog = new Product('crocchette di manzo', '25.99', 'Per Cani');
-$foodCat = new Product('crocchette di pesce', '15.99', 'Per Gatto');
+$foodDog = new food('crocchette di manzo', '25.99', 'Per Cani', 300);
+$foodCat = new food('crocchette di pesce', '15.99', 'Per Gatto', 200);

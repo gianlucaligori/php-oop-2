@@ -2,9 +2,9 @@
 
 class kennels
 {
-    public $name;
-    public $price;
-    public $category;
+    public string $name;
+    public int $price;
+    public string $category;
 
     public function __construct($name, $price, $category)
     {
@@ -15,5 +15,5 @@ class kennels
 }
 
 
-$kennelsDog = new Product('Casetta in legno', '100.59', 'Per Cani');
-$kennelsCat = new Product('Cuscino', '40.99', 'Per Gatto');
+$kennelsDog = new kennels('Casetta in legno', '100.59', 'Per Cani');
+$kennelsCat = new kennels('Cuscino', '40.99', 'Per Gatto');

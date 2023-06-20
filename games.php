@@ -1,10 +1,11 @@
 <?php
 
-class kennels
+
+class games
 {
-    public $name;
-    public $price;
-    public $category;
+    public string $name;
+    public int $price;
+    public string $category;
 
     public function __construct($name, $price, $category)
     {
@@ -15,5 +16,5 @@ class kennels
 }
 
 
-$gameDog = new Product('Osso di gomma', '5,99', 'Per Cani');
-$gameCat = new Product('tiragraffi', '42.99', 'Per Gatto');
+$gameDog = new games('Osso di gomma', '5,99', 'Per Cani');
+$gameCat = new games('tiragraffi', '42.99', 'Per Gatto');
