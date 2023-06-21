@@ -1,19 +1,14 @@
 <?php
 
-class snack
+class Snack extends Product
 {
-    public string $name;
-    public int $price;
-    public string $category;
+    public int $weight;
 
-    public function __construct($name, $price, $category)
+
+
+    public function __construct($nameProduct, $price, $type, $weight)
     {
-        $this->name = $name;
-        $this->price = $price;
-        $this->category = $category;
+        parent::__construct($nameProduct, $price, $type);
+        $this->weight = $weight;
     }
 }
-
-
-$snackDog = new snack('Barrette', ' 19.99', 'Per cani');
-$snackCat = new snack('Biscotti', '15.99', 'Per Gatto');

@@ -1,23 +1,13 @@
 <?php
 
-class food
+class Food extends Product
 {
-    public string $name;
-    public int $price;
-    public string $category;
-    public int $weight;
 
+    public  $weight;
 
-
-    public function __construct($name, $price, $category, $weight)
+    public function __construct($nameProduct, $price, $type, $weight,)
     {
-        $this->name = $name;
-        $this->price = $price;
-        $this->category = $category;
+        parent::__construct($nameProduct, $price, $type);
         $this->weight = $weight;
     }
 }
-
-
-$foodDog = new food('crocchette di manzo', '25.99', 'Per Cani', 300);
-$foodCat = new food('crocchette di pesce', '15.99', 'Per Gatto', 200);

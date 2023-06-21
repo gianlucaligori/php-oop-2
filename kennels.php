@@ -1,19 +1,14 @@
 <?php
 
-class kennels
+class Kennels extends Product
 {
-    public string $name;
-    public int $price;
-    public string $category;
 
-    public function __construct($name, $price, $category)
+
+
+
+    public function __construct($nameProduct, $price, $type)
+
     {
-        $this->name = $name;
-        $this->price = $price;
-        $this->category = $category;
+        parent::__construct($nameProduct, $price, $type);
     }
 }
-
-
-$kennelsDog = new kennels('Casetta in legno', '100.59', 'Per Cani');
-$kennelsCat = new kennels('Cuscino', '40.99', 'Per Gatto');
