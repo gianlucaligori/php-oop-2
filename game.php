@@ -2,14 +2,13 @@
 
 class Games extends Product
 {
-    public  $nameGame;
 
 
 
 
-    public function __construct($nameProduct, $price, $type, $nameGame)
+
+    public function __construct($nameProduct, $price, $type, $image)
     {
-        parent::__construct($nameProduct, $price, $type);
-        $this->nameGame = $nameGame;
+        parent::__construct($nameProduct, $price, $type, $image);
     }
 }
